@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>sponsor US</h1>
+        <a href="#" id="link"> <button> open link </button></a>
+
+    </div>
+
+    <div class="bg-model">
+        <div class="model-content">
+            <div class="close">+</div>
+            <h1>Sponsor Us</h1>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Contact-number">
+                <textarea name="" id="" cols="42" rows="10"> </textarea>
+                <input type="submit" name="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('link').addEventListener('click', function(){
+            document.querySelector('.bg-model').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click',function(){
+            document.querySelector('.bg-model').style.display = 'none';
+        });
+    </script>
+   
+    
+</body>
+</html>
